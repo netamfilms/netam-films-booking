@@ -1,9 +1,9 @@
 "use client";
 import {useEffect,useMemo,useState} from "react";
-import {Camera,Clapperboard,Drone,Film,Images,ArrowRight,CheckCircle2} from "lucide-react";
+import {Camera,Clapperboard,Film,Images,ArrowRight,CheckCircle2} from "lucide-react";
 import {business,defaultServices,eventTypes} from "@/lib/config";
 import {money,estimate} from "@/lib/format";
-const icons=[Camera,Film,Clapperboard,Drone,Film,Images];
+const icons=[Camera,Film,Clapperboard,Camera,Film,Images];
 type Service={key:string;name:string;unit:string;price:number;kind:string};
 export default function Home(){
  const [services,setServices]=useState<Service[]>(defaultServices as any);
